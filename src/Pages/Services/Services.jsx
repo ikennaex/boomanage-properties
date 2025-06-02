@@ -32,8 +32,8 @@ const serviceList = [
 
 const Services = () => {
   return (
-<div className='px-7 py-10 bg-customBlue'>
-    <div className='container mx-auto'>
+<div className='px-7 py-10 bg-customBlue '>
+    <div className='container mx-auto fade-in-bottom'>
         <div>
             <h2 className='text-5xl font-bold text-white'>Services</h2>
         </div>

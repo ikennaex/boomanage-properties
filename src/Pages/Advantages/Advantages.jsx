@@ -35,7 +35,7 @@ const advantagesList = [
 const Advantages = () => {
   return (
     <div className='bg-customBlue'>
-    <div className='container mx-auto px-7 py-10'>
+    <div className='container mx-auto px-7 py-10 fade-in-bottom'>
   <h2 className='text-5xl font-bold mb-8 text-white'>What Sets Us Apart</h2>
 
   <div className='grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>

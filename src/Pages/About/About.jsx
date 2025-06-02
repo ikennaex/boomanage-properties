@@ -4,7 +4,7 @@ import { img7 } from '../../imports'
 const About = () => {
   return (
     <div className="bg-customBlue">
-  <div className="container mx-auto px-4 py-10">
+  <div className="container mx-auto px-4 py-10 fade-in-bottom">
     <div className="flex flex-col lg:flex-row items-center gap-10">
       
       {/* Image */}
