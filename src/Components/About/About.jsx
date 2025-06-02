@@ -1,5 +1,7 @@
 import React from 'react'
 import { img7 } from '../../imports'
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router';
 
 const About = () => {
   return (
@@ -22,7 +24,12 @@ const About = () => {
     </div>
 
     <div className='pt-7'>
-        <button className='bg-customBlue px-10 py-3 rounded-xl font-bold text-white'>Read More</button>
+      <Link to= {"/about"}>
+        <button className='flex items-center justify-evenly gap-4 bg-customBlue px-5 py-3 rounded-xl font-bold text-white'>Read More
+        <FaArrowRight />
+           </button>
+
+           </Link>
     </div>
 </div>
   )

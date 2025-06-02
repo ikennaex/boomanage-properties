@@ -8,7 +8,7 @@ const Navbar = () => {
     const menuItems = [
       {
         name: "About Us",
-        link: "/about-us"
+        link: "/about"
       },
       {
         name: "Services",
@@ -19,8 +19,8 @@ const Navbar = () => {
         link: "/advantages"
       },
       {
-        name: "Testimonials",
-        link: "/testimonials"
+        name: "Contact",
+        link: "/contact"
       },
     ]
 

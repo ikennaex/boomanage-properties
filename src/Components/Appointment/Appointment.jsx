@@ -1,5 +1,6 @@
 import React from 'react'
 import { engineer } from '../../imports'
+import { FaArrowRight } from "react-icons/fa";
 
 const Appointment = () => {
   return (
@@ -20,8 +21,9 @@ const Appointment = () => {
         <p className='text-sm lg:text-base leading-relaxed'>
           We have dedicated electrical engineers and energy consultants to help you make informed decisions about your power and infrastructure investments.
         </p>
-        <button className='bg-customBlue w-full lg:w-fit px-6 py-3 rounded-xl font-bold hover:opacity-90 transition duration-300'>
+        <button className='flex justify-around items-center bg-customBlue w-full lg:w-fit px-6 py-3 rounded-xl font-bold hover:opacity-90 transition duration-300'>
           Book Appointment
+          <FaArrowRight size={30} />
         </button>
       </div>
 
