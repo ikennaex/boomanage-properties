@@ -1,6 +1,7 @@
 import React from 'react'
 import { logo } from '../../imports'
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn  } from "react-icons/fa";
+import { Link } from 'react-router';
 
 const Footer = () => {
 
@@ -12,7 +13,9 @@ const Footer = () => {
     <div className='flex flex-col lg:flex-row justify-between gap-10'>
       {/* Logo and Description */}
       <div className='lg:w-1/3'>
+      <Link to = {'/'}>
         <img className='h-14 mb-4' src={logo} alt="LumiGrid logo" />
+      </Link>
         <p className='text-white text-sm leading-relaxed'>
           LumiGrid Technology Limited is a pioneering renewable energy firm committed to bridging Nigeria's energy access gap through the deployment of advanced solar power technologies.
         </p>
@@ -32,7 +35,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://web.facebook.com/profile.php?id=61555161683538"
+            href="https://www.facebook.com/share/14zFWkJDCp/"
           >
             <FaFacebook size={20} />
           </a>
@@ -40,9 +43,17 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.instagram.com/sherpaverseltd/"
+            href="https://www.instagram.com/marere_mavo/"
           >
             <FaInstagram size={20} />
+          </a>
+          
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/akporowho-mariere-922862209/"
+          >
+            <FaLinkedinIn size={20}/>
           </a>
         </div>
       </div>

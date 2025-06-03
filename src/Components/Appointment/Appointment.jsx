@@ -1,36 +1,44 @@
-import React from 'react'
-import { engineer } from '../../imports'
+import React from "react";
+import { engineer } from "../../imports";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Appointment = () => {
   return (
-<div className='bg-customBlue'>
-  <div className='container mx-auto py-32 px-4 text-white'>
-    <div className='flex flex-col lg:flex-row items-center gap-7 bg-gray-900 rounded-3xl px-6 py-8 lg:py-12'>
-      
-      {/* Image Section */}
-      <div className='flex-shrink-0'>
-        <img className='object-cover h-60 w-full max-w-xs rounded-2xl' src={engineer} alt="Engineer" />
-      </div>
+    <div className="bg-customBlue">
+      <div className="container mx-auto py-32 px-4 text-white">
+        <div className="flex flex-col lg:flex-row items-center gap-7 bg-gray-900 rounded-3xl px-6 py-8 lg:py-12">
+          {/* Image Section */}
+          <div className="flex-shrink-0">
+            <img
+              className="object-cover h-60 w-full max-w-xs rounded-2xl"
+              src={engineer}
+              alt="Engineer"
+            />
+          </div>
 
-      {/* Text + Button Section */}
-      <div className='flex flex-col gap-5'>
-        <h2 className='text-2xl lg:text-3xl font-bold leading-snug'>
-          Need help? Book a call at a time that suits you
-        </h2>
-        <p className='text-sm lg:text-base leading-relaxed'>
-          We have dedicated electrical engineers and energy consultants to help you make informed decisions about your power and infrastructure investments.
-        </p>
-        <button className='flex justify-around items-center bg-customBlue w-full lg:w-fit px-6 py-3 rounded-xl font-bold hover:opacity-90 transition duration-300'>
-          Book Appointment
-          <FaArrowRight size={30} />
-        </button>
-      </div>
+          {/* Text + Button Section */}
+          <div className="flex flex-col gap-5">
+            <h2 className="text-2xl lg:text-3xl font-bold leading-snug">
+              Need help? Book a call at a time that suits you
+            </h2>
+            <p className="text-sm lg:text-base leading-relaxed">
+              We have dedicated electrical engineers and energy consultants to
+              help you make informed decisions about your power and
+              infrastructure investments.
+            </p>
 
+            <Link to={"/contact"}>
+              <button className="flex flex-row items-center justify-center gap-3 bg-customBlue w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-white hover:opacity-90 transition duration-300">
+                Book Appointment
+                <FaArrowRight size={24} />
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-  )
-}
+  );
+};
 
-export default Appointment
+export default Appointment;
