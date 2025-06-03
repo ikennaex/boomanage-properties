@@ -6,6 +6,7 @@ import img4 from "./assets/img4.jpg"
 import img5 from "./assets/img5.jpg"
 import img6 from "./assets/img6.jpg"
 import img7 from "./assets/img7.jpg"
+import img8 from "./assets/img8.jpg"
 import efficiency from "./assets/efficiency.png"
 import decentralized from "./assets/decentralized.png"
 import warranty from "./assets/warranty.png"
@@ -17,5 +18,5 @@ import engineer from "./assets/engineer.png"
 
 
 export {
-    logo, img1, img2, img3, img4, img5, img6, img7, efficiency,decentralized, warranty, diagnose, ai, battery, climate, engineer
+    logo, img1, img2, img3, img4, img5, img6, img7, img8, efficiency,decentralized, warranty, diagnose, ai, battery, climate, engineer
 }

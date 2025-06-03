@@ -19,6 +19,10 @@ const Navbar = () => {
         link: "/advantages"
       },
       {
+        name: "Meet the CEO",
+        link: "/abouttheceo"
+      },
+      {
         name: "Contact",
         link: "/contact"
       },
