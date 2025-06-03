@@ -1,5 +1,5 @@
 import React from 'react'
-import { img7 } from '../../imports'
+import { img10, img7 } from '../../imports'
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router';
 
@@ -10,7 +10,7 @@ const About = () => {
         <div className='lg:w-1/2'>
             <img 
                 className='w-full object-cover pr-2 lg:h-full slide-in-blurred-bottom rounded-3xl' 
-                src={img7} 
+                src={img10} 
                 alt="solar panel" 
             />
         </div>

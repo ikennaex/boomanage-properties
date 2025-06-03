@@ -1,5 +1,5 @@
 import React from 'react'
-import { img7 } from '../../imports'
+import { img10, img7 } from '../../imports'
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
       
       {/* Image */}
       <div className="w-full lg:w-1/2">
-        <img className="rounded-3xl w-full h-auto object-cover" src={img7} alt="LumiGrid Panel" />
+        <img className="rounded-3xl w-full h-auto object-cover" src={img10} alt="LumiGrid Panel" />
       </div>
 
       {/* Text */}
