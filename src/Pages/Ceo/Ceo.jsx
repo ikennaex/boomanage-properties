@@ -1,5 +1,5 @@
 import React from "react";
-import { img8 } from "../../imports";
+import { img11 } from "../../imports";
 
 const Ceo = () => {
   return (
@@ -8,7 +8,7 @@ const Ceo = () => {
     <div className="w-full lg:w-1/2 flex-shrink-0">
       <img
         className="object-cover w-full h-64 md:h-96 rounded-2xl mb-5 lg:mb-0"
-        src={img8}
+        src={img11}
         alt="CEO"
       />
     </div>

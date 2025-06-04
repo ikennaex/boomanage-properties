@@ -1,6 +1,34 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const [fullName, setFullName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+  
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_kf80s0g', 'template_waassmf', form.current, {
+          publicKey: 'nK6b5sNutEBmb4Jfn',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            alert("Your message has been sent successfully, we will get back shortly!")
+            setFullName("")
+            setEmail("")
+            setMessage("")
+  
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
+
   return (
 <div className="bg-gray-100 py-16 px-4">
   <div className="container mx-auto">
@@ -23,20 +51,20 @@ const Contact = () => {
 
       {/* Contact Form */}
       <div className="lg:w-1/2 bg-white p-8 rounded-2xl shadow-md">
-        <form className="space-y-6">
+        <form ref= {form} onSubmit={sendEmail} className="space-y-6">
           <div>
             <label className="block text-gray-700 font-semibold mb-2">Name</label>
-            <input type="text" placeholder="Your name" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400" />
+            <input value={fullName} onChange= {(e) => setFullName(e.target.value)} type="text" name="user_name" placeholder="Your name" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400" />
           </div>
           <div>
             <label className="block text-gray-700 font-semibold mb-2">Email</label>
-            <input type="email" placeholder="you@example.com" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400" />
+            <input value={email} onChange= {(e) => setEmail(e.target.value)} type="email" name='user_email' placeholder="you@example.com" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400" />
           </div>
           <div>
             <label className="block text-gray-700 font-semibold mb-2">Message</label>
-            <textarea placeholder="Write your message..." rows="5" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            <textarea value={message} onChange= {(e) => setMessage(e.target.value)} placeholder="Write your message..." rows="5" name = "message" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
           </div>
-          <button type="submit" className="bg-customBlue text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-800 transition-all">
+          <button className="bg-customBlue text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-800 transition-all">
             Send Message
           </button>
         </form>
