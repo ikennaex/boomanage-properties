@@ -2,14 +2,14 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import "./herosection.css";
-import { img12 } from "../../imports";
+import { img12, img13 } from "../../imports";
 
 const Herosection = () => {
   return (
     <div
       className="hero-bg"
       style={{
-        backgroundImage: `url(${img12})`,
+        backgroundImage: `url(${img13})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
