@@ -2,6 +2,7 @@ import React from 'react';
 import {
   img1, img10, img2, img3, img4, img5, img6, img7, img8, img9
 } from '../../imports';
+import FadeIn from '../../Components/fadein';
 
 const serviceList = [
   {
@@ -71,6 +72,7 @@ const Services = () => {
 
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {serviceList.map((service, index) => (
+            <FadeIn duration = {100} >
             <div
               key={index}
               className="bg-white/5 backdrop-blur-md hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 p-6 rounded-3xl flex flex-col justify-between h-full"
@@ -85,6 +87,7 @@ const Services = () => {
                 <p className="text-sm leading-relaxed text-gray-100">{service.desc}</p>
               </div>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>

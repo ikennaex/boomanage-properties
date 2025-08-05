@@ -26,7 +26,7 @@ const Herosection = () => {
                 </p>
               </div>
 
-              <h1 className="lg:text-5xl lg:w-3/4 leading-[1.2] font-black header-text text-3xl text-white pb-6 slide-in-bottom">
+              <h1 className="lg:text-5xl lg:w-3/4 leading-[1.2] font-black header-text text-3xl text-white pb-6 slide-in-fwd-center">
                 Building Wealth Through Real Estate & Business Advisory
               </h1>
 

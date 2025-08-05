@@ -1,9 +1,11 @@
 import React from "react";
 import { ceo } from "../../imports";
+import FadeIn from '../../Components/fadein';
 
 const Ceo = () => {
   return (
     <section className="bg-customBlue text-white py-16">
+      <FadeIn duration = {100} >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-start gap-12">
           {/* Image */}
@@ -11,10 +13,11 @@ const Ceo = () => {
             <img
               src={ceo}
               alt="Victor Akinsipe - CRO"
-              className="lg:w-96 w-80 h-auto rounded-full shadow-lg object-cover"
+              className="lg:w-96 w-80 h-auto rounded-full border-8 shadow-lg object-cover"
             />
           </div>
 
+          
           {/* Text Content */}
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -35,6 +38,7 @@ const Ceo = () => {
           </div>
         </div>
       </div>
+          </FadeIn>
     </section>
   );
 };

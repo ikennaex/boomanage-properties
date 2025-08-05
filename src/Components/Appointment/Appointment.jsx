@@ -2,9 +2,11 @@ import React from "react";
 import { agent } from "../../imports";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router";
+import FadeIn from '../fadein';
 
 const Appointment = () => {
   return (
+    <FadeIn duration = {100} >
     <div className="bg-customBlue lg:px-32">
       <div className="container mx-auto py-32 px-4 text-white">
         <div className="flex flex-col lg:flex-row items-center gap-7 bg-cyan-700 rounded-3xl px-6 py-8 lg:py-2">
@@ -38,6 +40,7 @@ const Appointment = () => {
         </div>
       </div>
     </div>
+    </FadeIn>
   );
 };
 

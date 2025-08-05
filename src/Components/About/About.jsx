@@ -2,9 +2,11 @@ import React from 'react'
 import { img12, img7 } from '../../imports'
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router';
+import FadeIn from '../fadein';
 
 const About = () => {
   return (
+    <FadeIn duration = {100} >
     <div className='container mx-auto px-7 lg:px-20 py-14 lg:py-20'>
     <div className='lg:flex'>
         <div className='lg:w-1/2'>
@@ -14,7 +16,7 @@ const About = () => {
                 alt="real estate" 
             />
         </div>
-
+        
         <div className='lg:w-1/2 lg:pl-10'>
             <h2 className='font-bold text-3xl mt-7 lg:text-6xl'>Who are we?</h2>
             <p className='lg:text-xl mt-4'>
@@ -33,6 +35,7 @@ const About = () => {
            </Link>
     </div>
 </div>
+</FadeIn>
   )
 }
 
