@@ -17,7 +17,7 @@ const Footer = () => {
         <img className='h-14 mb-4' src={logo} alt="LumiGrid logo" />
       </Link>
         <p className='text-white text-sm leading-relaxed'>
-          LumiGrid Technology Limited is a pioneering renewable energy firm committed to bridging Nigeria's energy access gap through the deployment of advanced solar power technologies.
+          Boomanage Properties is a trusted indigenous firm offering expert services in real estate development, marketing, investment consulting, and business growth strategies.
         </p>
       </div>
 

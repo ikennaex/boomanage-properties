@@ -44,7 +44,7 @@ const Herosection = () => {
                 >
                   <button className="lg:rounded-2xl lg:px-8 flex gap-2 items-center bg-customYellow p-4 rounded-2xl font-bold text-white cursor-pointer">
                     <FaWhatsapp size={27} />
-                    Chat us
+                    Message us
                   </button>
                 </a>
                 <a href="mailto:info@lumigrid.com.ng">
