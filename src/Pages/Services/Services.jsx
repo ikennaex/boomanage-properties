@@ -1,59 +1,95 @@
-import React from 'react'
-import { img1, img3, img4, img5, img6 } from '../../imports'
+import React from 'react';
+import {
+  img1, img10, img2, img3, img4, img5, img6, img7, img8, img9
+} from '../../imports';
 
 const serviceList = [
-    {
-        name: "Solar PV System Design and Installation:",
-        desc: "Our solar installation services integrate Tier-1 monocrystalline and bifacial PV modules, configured with advanced hybrid inverters (up to 3-phase 50kW), high-voltage lithium iron phosphate (LiFePO₄) battery banks, and energy monitoring platforms. We customize every installation based on load profiling, geospatial solar irradiance assessment, and optimal azimuth-tilt alignment for maximum yield.",
-        img: img1
-    },
-    {
-        name: "Energy Storage Solutions:",
-        desc: "We deploy intelligent battery energy storage systems (BESS) designed to meet residential, commercial, and industrial energy demands. Our solutions offer high round-trip efficiency (>95%), extensive cycle life (6000+), and advanced BMS (Battery Management System) capabilities including cell balancing, temperature control, and over-discharge protection.",
-        img: img3
-    },
-    {
-        name: "Operations, Maintenance & Performance Optimization:",
-        desc: "Our O&M services include: Remote monitoring via IoT-enabled platforms Preventive and corrective maintenance protocols Inverter firmware upgrades and MPPT diagnostics Thermal imaging and IV curve tracing for PV performance analysis",
-        img: img4
-    },
-    {
-        name: "Consulting & Energy Audits:",
-        desc: "LumiGrid provides expert consulting for: Solar system feasibility and ROI analysis Load assessment and peak demand profiling Compliance with LEED and IFC EDGE green certification CAPEX and OPEX modeling for solar energy investments",
-        img: img5
-    },
-    {
-        name: "Smart Home & Grid Integration:",
-        desc: "We design smart hybrid systems that enable grid interaction, net metering, and energy arbitrage. Our systems are future-proofed with smart load controllers, surge protection devices (SPD), anti-islanding features, and remote troubleshooting via mobile and desktop interfaces.",
-        img: img6
-    },
-   
-]
+  {
+    name: "Brokerage & Property Sourcing",
+    desc: "We help clients find high-value residential and commercial properties, leveraging our vast network and market expertise to deliver optimal deals with strong growth potential.",
+    img: img1
+  },
+  {
+    name: "Deal Negotiation",
+    desc: "Our expert negotiators secure favorable terms for clients in buying, selling, or leasing properties—maximizing ROI and minimizing risks.",
+    img: img2
+  },
+  {
+    name: "Real Estate Advisory & Development",
+    desc: "From feasibility analysis to full-scale development strategy, we offer end-to-end consulting services for real estate projects across all asset classes.",
+    img: img3
+  },
+  {
+    name: "Business Initiation",
+    desc: "We support startups and new ventures by providing business structuring, market-entry strategies, and operational blueprints for success in the real estate sector.",
+    img: img4
+  },
+  {
+    name: "Business Development Advisory",
+    desc: "Boomanage helps businesses scale through structured growth plans, opportunity mapping, stakeholder engagement, and market expansion strategies.",
+    img: img5
+  },
+  {
+    name: "Investment Analysis",
+    desc: "We provide deep-dive analysis of real estate investment opportunities, considering cash flow, market trends, CAP rates, and long-term appreciation potential.",
+    img: img6
+  },
+  {
+    name: "Mortgage Loan Advisory",
+    desc: "Our team guides clients through financing processes, connecting them with top mortgage providers and ensuring terms that align with their financial goals.",
+    img: img7
+  },
+  {
+    name: "Construction & Renovations",
+    desc: "From ground-up construction to premium renovations, we manage building projects with quality assurance, cost efficiency, and regulatory compliance.",
+    img: img8
+  },
+  {
+    name: "Real Estate Investment Club",
+    desc: "Join our exclusive club for curated investment opportunities, group-buy deals, and access to insider market intelligence and expert insights.",
+    img: img9
+  },
+  {
+    name: "Property Management",
+    desc: "We offer end-to-end property management services including tenant acquisition, rent collection, maintenance, inspections, and reporting.",
+    img: img10
+  }
+];
 
 const Services = () => {
   return (
-<div className='px-7 py-10 bg-customBlue '>
-    <div className='container mx-auto fade-in-bottom'>
-        <div>
-            <h2 className='text-5xl font-bold text-white'>Services</h2>
+    <section className="bg-customBlue py-16 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto text-white">
+        <div className="mb-12 text-center">
+          <h2 className="text-4xl font-extrabold mb-4">
+            Our Services at <span className="text-customYellow">Boomanage Properties</span>
+          </h2>
+          <p className="text-lg opacity-80">
+            Discover our wide range of real estate and business development services tailored to empower your investments and ideas.
+          </p>
         </div>
 
-        <div className='mt-10 grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white'>
-            {serviceList.map((service, index) => (
-                <div key={index} className='rounded-3xl bg-gray-900 p-5 shadow-lg'>
-                    <img 
-                        className='object-cover w-full h-52 rounded-2xl mb-5' 
-                        src={service.img} 
-                        alt={service.name} 
-                    />
-                    <h1 className='font-bold text-2xl text-customYellow mb-3'>{service.name}</h1>
-                    <p className='text-sm'>{service.desc}</p>
-                </div>
-            ))}
+        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {serviceList.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white/5 backdrop-blur-md hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 p-6 rounded-3xl flex flex-col justify-between h-full"
+            >
+              <img
+                src={service.img}
+                alt={service.name}
+                className="object-cover w-full h-48 rounded-2xl mb-5 shadow"
+              />
+              <div>
+                <h3 className="text-xl font-bold text-customYellow mb-2">{service.name}</h3>
+                <p className="text-sm leading-relaxed text-gray-100">{service.desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
-    </div>
-</div>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Services
+export default Services;

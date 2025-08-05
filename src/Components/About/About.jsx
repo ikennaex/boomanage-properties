@@ -1,5 +1,5 @@
 import React from 'react'
-import { img10, img12, img7 } from '../../imports'
+import { img12, img7 } from '../../imports'
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router';
 
