@@ -9,9 +9,9 @@ const About = () => {
     <div className='lg:flex'>
         <div className='lg:w-1/2'>
             <img 
-                className='w-full object-cover pr-2 lg:h-full slide-in-blurred-bottom rounded-3xl' 
+                className='w-full object-cover pr-2 lg:h-full slide-in-blurred-bottom rounded-t-3xl' 
                 src={img12} 
-                alt="solar panel" 
+                alt="real estate" 
             />
         </div>
 
