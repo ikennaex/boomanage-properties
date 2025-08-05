@@ -1,5 +1,5 @@
 import React from 'react'
-import { img10, img7 } from '../../imports'
+import { img10, img12, img7 } from '../../imports'
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router';
 
@@ -10,7 +10,7 @@ const About = () => {
         <div className='lg:w-1/2'>
             <img 
                 className='w-full object-cover pr-2 lg:h-full slide-in-blurred-bottom rounded-3xl' 
-                src={img10} 
+                src={img12} 
                 alt="solar panel" 
             />
         </div>
@@ -18,7 +18,8 @@ const About = () => {
         <div className='lg:w-1/2 lg:pl-10'>
             <h2 className='font-bold text-3xl mt-7 lg:text-6xl'>Who are we?</h2>
             <p className='lg:text-xl mt-4'>
-                LumiGrid Technology Limited is a pioneering renewable energy firm committed to bridging Nigeria's energy access gap through the deployment of advanced solar power technologies. Founded by a team of electrical engineers, power system designers, and energy transition experts, LumiGrid delivers precision-engineered solar solutions that combine state-of-the-art photovoltaic technology with intelligent energy management systems.
+                Boomanage Properties is an indigenous Real Estate and Business Development firm with expertise in Real Estate Development, Dynamic Marketing & Brokerage, Business Initiation & Business Development Advisory, Real Estate Trainings, Management, Investment and Mortgage Advisory and Consultancy. 
+
             </p>
         </div>
     </div>
