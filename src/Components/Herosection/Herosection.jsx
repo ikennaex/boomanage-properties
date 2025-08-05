@@ -7,7 +7,7 @@ import { img12, img13 } from "../../imports";
 const Herosection = () => {
   return (
     <div
-      className="hero-bg"
+      className="hero-bg min-h-[80vh]"
       style={{
         backgroundImage: `url(${img13})`,
         backgroundSize: "cover",
@@ -17,9 +17,9 @@ const Herosection = () => {
     >
       <div className="overlay">
         <div className="container-content">
-          <div className="lg:px-10 pt-14 container mx-auto px-7 h-fit lg:p-28 p-8 gap-4 flex flex-col lg:flex-row lg:justify-between items-center">
+          <div className="lg:px-10 pt-14 container mx-auto px-7 min-h-[80vh] lg:p-28 p-8 gap-4 flex flex-col lg:flex-row lg:justify-between items-center">
             <div className="flex flex-col lg:items-start lg:text-left">
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 my-5">
                 <div className="w-2 h-2 bg-customYellow rounded-sm"></div>
                 <p className="text-white font-bold">
                   Welcome to Boomanage Properties
@@ -48,7 +48,7 @@ const Herosection = () => {
                   </button>
                 </a>
                 <a href="mailto:info@lumigrid.com.ng">
-                  <button className="lg:rounded-2xl lg:px-8 flex gap-2 items-center border-white hover:bg-white border-2 p-4 rounded-2xl font-bold text-white cursor-pointer">
+                  <button className="lg:rounded-2xl lg:px-8 flex gap-2 items-center border-white hover:bg-white border-2 p-4 rounded-2xl font-bold text-white hover:text-black cursor-pointer">
                     <MdOutlineMail size={27} />
                     Email us
                   </button>
