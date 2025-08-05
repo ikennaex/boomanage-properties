@@ -40,14 +40,14 @@ const Herosection = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://wa.me/2348135217518"
+                  href="https://wa.me/2348139096910"
                 >
                   <button className="lg:rounded-2xl lg:px-8 flex gap-2 items-center bg-customYellow p-4 rounded-2xl font-bold text-white cursor-pointer">
                     <FaWhatsapp size={27} />
                     Message us
                   </button>
                 </a>
-                <a href="mailto:info@lumigrid.com.ng">
+                <a href="mailto:info@boomanageproperties.net">
                   <button className="lg:rounded-2xl lg:px-8 flex gap-2 items-center border-white hover:bg-white border-2 p-4 rounded-2xl font-bold text-white hover:text-black cursor-pointer">
                     <MdOutlineMail size={27} />
                     Email us
