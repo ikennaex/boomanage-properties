@@ -50,7 +50,7 @@ const Navbar = () => {
 
               :
               <Link to={menu.link} className='nav-link'>
-                <p className='nav-menu text-[12px] hover:text-customBlue'>{menu.name}</p>
+                <p className='nav-menu text-[14px] hover:text-customBlue'>{menu.name}</p>
                 {/* {menu.name} */}
               </Link>
 
