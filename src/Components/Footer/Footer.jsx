@@ -2,6 +2,7 @@ import React from 'react'
 import { logo } from '../../imports'
 import { FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import { Link } from 'react-router'
+import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   const year = new Date().getFullYear()
@@ -42,6 +43,9 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/in/boomanage-properties-2ba629138/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FaLinkedinIn size={20} className="hover:text-blue-300 transition" />
+              </a>
+              <a href="https://x.com/BoomanagePrope1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <FaXTwitter size={20} className="hover:text-blue-300 transition" />
               </a>
             </div>
           </div>
