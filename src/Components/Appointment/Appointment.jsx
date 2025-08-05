@@ -7,7 +7,7 @@ const Appointment = () => {
   return (
     <div className="bg-customBlue lg:px-32">
       <div className="container mx-auto py-32 px-4 text-white">
-        <div className="flex flex-col lg:flex-row items-center gap-7 bg-gray-900 rounded-3xl px-6 py-8 lg:py-2">
+        <div className="flex flex-col lg:flex-row items-center gap-7 bg-cyan-700 rounded-3xl px-6 py-8 lg:py-2">
           {/* Image Section */}
           <div className="flex-shrink-0">
             <img
