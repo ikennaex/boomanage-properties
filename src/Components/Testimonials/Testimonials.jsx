@@ -4,25 +4,26 @@ import { motion, AnimatePresence } from 'framer-motion'
 const testimonials = [
   {
     quote:
-      '“We had trouble understanding the right type of business coverage until Oak & Trust stepped in. They were transparent and proactive throughout.”',
-    author: '— Linda K., Sydney'
+      '“Boomanage Properties helped me secure my first investment property with ease. Their advisory team was patient, professional, and incredibly knowledgeable.”',
+    author: '— Linda O., Lekki'
   },
   {
     quote:
-      '“The claims process was so fast and stress-free. It’s clear their priority is customer satisfaction, not just paperwork.”',
-    author: '— James T., Perth'
+      '“I had no idea where to start with real estate investment until I met Boomanage. They broke down the process and guided me step-by-step. Now I own 2 properties.”',
+    author: '— Taiwo T., Abuja'
   },
   {
     quote:
-      '“As a first-time homebuyer, I appreciated how they walked me through everything. I’ve already referred three friends.”',
-    author: '— Melissa R., Brisbane'
+      '“Their team helped me negotiate a great deal on a commercial space. It was a seamless experience from property sourcing to documentation.”',
+    author: '— Adewale R., Ikeja'
   },
   {
     quote:
-      '“We saved over $1,500 per year by bundling our business and home insurance—and now have more complete coverage!”',
-    author: '— Rajesh P., Melbourne'
+      '“With Boomanage Properties, I joined a real estate investment club that’s already showing returns. Their network and experience are unmatched.”',
+    author: '— Johnson P., Victoria Island'
   }
-]
+];
+
 
 const Testimonials = () => {
   const [index, setIndex] = useState(0)
