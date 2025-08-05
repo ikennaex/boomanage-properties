@@ -1,4 +1,5 @@
 import logo from "./assets/logo.jpg"
+import ceo from "./assets/ceo.jpg"
 import img1 from "./assets/img1.jpg"
 import img2 from "./assets/img2.jpg"
 import img3 from "./assets/img3.jpg"
@@ -9,7 +10,6 @@ import img7 from "./assets/img7.jpg"
 import img8 from "./assets/img8.jpg"
 import img9 from "./assets/img9.jpg"
 import img10 from "./assets/img10.jpg"
-import img11 from "./assets/img11.jpg"
 import img12 from "./assets/img12.jpg"
 import img13 from "./assets/img13.jpg"
 import img14 from "./assets/img14.jpg"
@@ -24,5 +24,5 @@ import agent from "./assets/agent.png"
 
 
 export {
-    logo, img1, img2, img3, img4, img5, img6, img7, img8,img9,img10,img11,img12,img13,img14, efficiency,decentralized, warranty, diagnose, ai, battery, climate, agent
+    logo, ceo, img1, img2, img3, img4, img5, img6, img7, img8,img9,img10,img12,img13,img14, efficiency,decentralized, warranty, diagnose, ai, battery, climate, agent
 }

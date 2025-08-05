@@ -15,12 +15,8 @@ const Navbar = () => {
         link: "/services"
       },
       {
-        name: "Why choose Us",
-        link: "/advantages"
-      },
-      {
-        name: "Meet the CEO",
-        link: "/abouttheceo"
+        name: "Meet the CRO",
+        link: "/aboutthecro"
       },
       {
         name: "Contact",

@@ -26,7 +26,7 @@ const Footer = () => {
             <ul className="text-sm space-y-2 text-gray-300">
               <li>📍 Maryland Mall, Maryland, Lagos</li>
               <li>📧 info@boomanageproperties.net</li>
-              <li>📞 +234 901 234 5678</li> {/* Replace with actual number if needed */}
+              <li>📞 +2348139096910, +2348123173582.</li> {/* Replace with actual number if needed */}
             </ul>
           </div>
 
