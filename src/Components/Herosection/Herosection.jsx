@@ -36,7 +36,9 @@ const Herosection = () => {
                 investment consulting, and business growth strategies.
               </p>
 
-              <div className="pt-9 flex flex-row items-center gap-6 slide-in-left2">
+              <p className="text-white py-5 text-2xl font-bold">Interested in acquiring a property? Contact us today!</p>
+
+              <div className="pt-4 flex flex-row items-center gap-6 slide-in-left2">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
