@@ -5,7 +5,6 @@ import { Routes, Route} from "react-router-dom"
 import Footer from './Components/Footer/Footer'
 import About from './Pages/About/About'
 import Services from './Pages/Services/Services'
-import Advantages from './Pages/Advantages/Advantages'
 import Contact from './Pages/Contact/Contact'
 import Ceo from './Pages/Ceo/Ceo'
 import ScrollToTop from './Components/ScrollToTop'
