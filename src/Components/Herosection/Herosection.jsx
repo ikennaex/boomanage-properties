@@ -49,7 +49,7 @@ const Herosection = () => {
                     Message us
                   </button>
                 </a>
-                <a href="mailto:info@boomanageproperties.net">
+                <a href="mailto:info@boomanageproperties.com">
                   <button className="lg:rounded-2xl lg:px-8 flex gap-2 items-center border-white hover:bg-white border-2 p-4 rounded-2xl font-bold text-white hover:text-black cursor-pointer">
                     <MdOutlineMail size={27} />
                     Email us
